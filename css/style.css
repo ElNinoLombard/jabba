@@ -1,0 +1,201 @@
+/* Couleur/image de fond */
+
+body {
+    background-color: #C0C0C0; /* Silver */
+    background-image: url(../images/starwars_logo.png);
+    background-size: 50%;
+}
+
+footer {
+    background-color: #000000; /* Black */
+}
+
+/* Couleur des textes */
+
+h1 {
+    color: #0B610B;
+}
+
+h2, h3 {
+    color: #4B8A08;
+}
+
+footer p {
+    color: #FFFFFF; /* White */
+}
+
+/* Alignements */
+
+header, footer {
+    text-align: center;
+}
+
+#par_header {
+    text-align: right;
+}
+
+article p {
+    text-align: justify;
+}
+
+/* jabba */
+
+.jabba {
+    color: #868A08;
+    text-shadow: 3px 2px #F4FA58; /*#F3E2A9;*/
+}
+
+h1 .jabba {
+    color: #0B610B;
+}
+
+h2 .jabba, h3 .jabba {
+    color: #4B8A08;
+}
+
+
+/* Fontes */
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    font-family: jedi;
+}
+
+@font-face{
+    font-family: jedi;
+    src: url('../polices/Starjedi.ttf');
+}
+
+h3{
+    font-family: Bungee;
+}
+
+/* Liens */
+
+a:link {
+    color: #d2691e; /* Chocolate */
+}
+
+a:visited {
+    color: #FFA500; /* Orange */
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/****************************/
+/**  TD 3                ****/
+
+
+/* modèle de boîte */
+
+body{
+    margin-left: 15%;
+    margin-right: 15%;
+    /* on aurait pu écrire à la place :     margin: 0 15%; */
+    background-repeat: repeat-y;
+    background-position: center top;
+    background-size: 80%;   /* modifie la valeur du TD2 donnée plus haut */
+}
+
+h2 {
+    border-bottom: solid black 2pt;
+}
+
+h1 {
+    border-style: double none double none;
+    border-color: #604618;
+    border-width: 8px;
+    width: 20em;
+    text-align: center;
+    /* margin: 0 auto; */
+    margin: 0 auto 1em auto;
+    padding-bottom: 0.2em;
+}
+
+/* mise en forme des images */
+
+header img {
+    width: 50vw;
+    border-radius: 80% 20% 30% 20px;
+}
+
+article img {
+    float: right;
+    width: 40%;
+    margin: 0 0 0 1em;
+    padding: 0.3em;
+    border: double green .5em;
+}
+
+article img:hover {
+    width: 60%;
+}
+
+#img_jeune {
+    filter: brightness(80%);
+}
+
+/* mise en forme des tableaux */
+
+table, td, th {
+    border: 1px solid white; /* white enlevé puis remis*/
+/*  border-radius: 5px;
+    border-spacing: 5px 20px;
+    border-spacing: 0px 0px; */
+}
+
+td {
+    padding: 0.2em 0.5em;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: black;
+    color: white;
+    caption-side: bottom;
+}
+
+table caption {
+    background-color: #008000; /* green */
+    color: #00FF00;  /* lime */
+    text-align: left;
+    padding-left: 1em;
+}
+
+td:first-child {
+    color: yellow;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #444444;
+}
+
+
+/* modifications pour le TD5 */
+
+header img {
+    width: 30em;
+}
+
+body {
+    margin: 0 10%;
+    background-size: 90%;
+}
+
+/* Redéfinition header pour présentation étroite - TD6 */
+
+h1 {
+    width: 90%;
+    max-width: 20em;
+}
+
+header img {
+    width: 90%;
+    max-width: 30em;
+}

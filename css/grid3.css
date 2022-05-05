@@ -1,0 +1,31 @@
+
+body {
+    display: grid;
+    grid-row-gap: 0.5rem;
+    grid-template-areas:
+        "header"
+        "nav"
+        "article"
+        "aside"
+        "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+article {
+    grid-area: article;
+}
+
+footer {
+    grid-area: footer;
+}
+
+aside {
+    grid-area: aside;
+}

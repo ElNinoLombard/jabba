@@ -1,0 +1,72 @@
+/*****************************************************
+ * MENU DEROULANT vertical
+ */
+
+nav ul {
+    position: relative;
+    display: block;
+    padding: 0;
+    
+    background-color: #cccc00;
+    border-radius: 0.5em;
+}
+
+nav li{
+    display: block;
+    list-style-type: none;
+    width: 16em;
+    height: 2em;
+    line-height: 2em;
+
+    font-family: jedi;
+    background-color: #cccc00;
+    border-radius: 0.5em;
+}
+
+nav ul ul {
+    display: none;
+    left: 16em;
+    margin-top: -2em;    
+}
+
+nav li:hover > ul {
+    position: absolute;
+    display: block;
+    z-index: 1;
+}
+
+nav li:hover {
+    background-color: #ccffcc;  /* vert pâle */
+}
+
+nav a:link, nav a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+nav li:hover > a:link, nav li:hover > a:visited {
+    text-decoration: none;
+    color: #0B610B;
+}
+
+/* 2 règles pour inverser les couleurs de fond et survol au 2e niveau */
+nav li:hover > ul > li, nav li:hover > ul {
+    background-color: #ccffcc;  /* vert pâle */
+}
+nav li > ul > li:hover {
+    background-color: #cccc00;
+}
+
+
+nav li > a {
+    display: block;
+    padding: 0 1em;
+}
+
+.plus {
+    background-image: url(../images/chevron-arrow-right.png);
+    background-size: 0.75em;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
